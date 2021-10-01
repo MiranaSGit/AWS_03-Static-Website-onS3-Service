@@ -64,10 +64,9 @@ Kittens Carousel is a static website application deployed on AWS Simple Storage 
 
 AWS_Static-Website-onS3-Service (folder)
 |
-|----readme.md                 # Definition of the project
-|----my-cf-template.yaml       # Cloudformation template
-|----upload-script.sh          # Script to upload website content to S3
-|----static-web
+|----readme.md              # Definition of the project
+|----my-cf-template.yaml    # Cloudformation template
+|----static-web             # Script to upload website content to S3
         |----index.html     # HTML file
         |----cat0.jpg       # image file
         |----cat1.jpg       # image file
