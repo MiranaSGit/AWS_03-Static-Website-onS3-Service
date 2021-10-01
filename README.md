@@ -1,12 +1,10 @@
-# Project-006 : Kittens Carousel Static Website deployed on AWS Cloudfront, S3 and Route 53 using Cloudformation
+# Static Website deployed on AWS Cloudfront, S3 and Route 53 using Cloudformation
 
 ## Description
 
 Kittens Carousel is a static website application deployed on AWS Simple Storage Service (S3), served through Cloudfront and Route 53 using AWS Cloudformation Service.
 
 ## Problem Statement
-
-![Project_006](Project_006.png)
 
 - Your company has recently started a web application project that will serve as an attraction point for pet lovers. As a first step of the project, you have deployed the app on EC2 instance and showed that design is good and working, thus you can go to next step. Developers in your team have prepared kittens carousel application and pushed necessary files for the project to the repository on Github.
 
@@ -22,9 +20,9 @@ Kittens Carousel is a static website application deployed on AWS Simple Storage 
 
     - The application stack should take two parameters from the user;
 
-      - The DNS name of an existing Amazon Route 53 hosted zone e.g. `clarusway.us`
+      - The DNS name of an existing Amazon Route 53 hosted zone e.g. `omerfarukdemirozu.net`
 
-      - The full domain name e.g. `kittens.clarusway.us` for the web application
+      - The full domain name e.g. `kittens.omerfarukdemirozu.net` for the web application
 
     - The Web Application files should be served from S3 bucket which should be configured as a static website host and the content should be reachable from anywhere.
 
@@ -63,21 +61,18 @@ Kittens Carousel is a static website application deployed on AWS Simple Storage 
 ## Project Skeleton
 
 ```text
-006-kittens-carousel-static-web-s3-cf (folder)
+
+AWS_Static-Website-onS3-Service (folder)
 |
-|----readme.md              # Given to the students (Definition of the project)
-|----cfn-template.yml       # To be delivered by students (Cloudformation template)
-|----upload-script.sh       # To be delivered by students (Script to upload website content to S3)
+|----readme.md                 # Definition of the project
+|----my-cf-template.yaml       # Cloudformation template
+|----upload-script.sh          # Script to upload website content to S3
 |----static-web
-        |----index.html     # Given to the students (HTML file)
-        |----cat0.jpg       # Given to the students (image file)
-        |----cat1.jpg       # Given to the students (image file)
-        |----cat2.jpg       # Given to the students (image file)
+        |----index.html     # HTML file
+        |----cat0.jpg       # image file
+        |----cat1.jpg       # image file
+        |----cat2.jpg       # image file
 ```
-
-## Expected Outcome
-
-![Project 101 : Kittens Carousel Application Snapshot](./project-006-snapshot.png)
 
 ### At the end of the project, following topics are to be covered;
 
@@ -98,42 +93,6 @@ Kittens Carousel is a static website application deployed on AWS Simple Storage 
 - AWS Cloudformation Template Design
 
 - Git & Github for Version Control System
-
-### At the end of the project, students will be able to;
-
-- demonstrate bash scripting skills using AWS CLI to upload the application files to S3 bucket.
-
-- configure S3 buckets through Cloudformation.
-
-- configure ACM Certificate through Cloudformation.
-
-- configure Cloudfront through Cloudformation.
-
-- configure Route 53 record set through Cloudformation.
-
-- configure Cloudformation template to use AWS Resources.
-
-- use AWS Cloudformation Service to launch stacks.
-
-- use git commands (push, pull, commit, add etc.) and Github as Version Control System.
-
-## Steps to Solution
-  
-- Step 1: Download or clone project definition from `clarusway` repo on Github
-
-- Step 2: Create project folder for local public repo on your pc
-
-- Step 3: Prepare a cloudformation template to deploy your app
-
-- Step 4: Deploy your application on AWS Cloud using Cloudformation template
-
-- Step 5: Upload your application files into S3 bucket from your local git repo
-
-## Notes
-
-- Customize the application by hard-coding your name instead of `student_name` within `index.html`.
-
-- Use `bash upload-script.sh` to invoke upload script.
 
 ## Resources
 
